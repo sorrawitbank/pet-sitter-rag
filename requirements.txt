@@ -1,1 +1,8 @@
+asyncpg
 fastapi
+google-genai
+langchain
+langchain-core
+langchain-google-genai
+python-dotenv
+rapidfuzz
