@@ -2,6 +2,7 @@
 LangChain custom retriever: vector search + sitter ranking, returns top-3 sitters as Documents.
 """
 
+import asyncio
 from typing import Any, List, Optional
 
 from langchain_core.documents import Document
@@ -71,6 +72,17 @@ class SitterRankingRetriever(BaseRetriever):
                 )
             )
         return result
+
+    def _get_relevant_documents(
+        self,
+        query: str,
+        *,
+        run_manager: Optional[Any] = None,
+    ) -> List[Document]:
+        """Sync wrapper for callers that do not use ainvoke; runs async retrieval."""
+        return asyncio.run(
+            self._aget_relevant_documents(query, run_manager=run_manager)
+        )
 
 
 def get_sitter_retriever(top_k: Optional[int] = None) -> SitterRankingRetriever:
