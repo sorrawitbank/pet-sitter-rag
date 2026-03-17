@@ -8,10 +8,10 @@ import asyncpg
 load_dotenv()
 
 
-DATABASE_URL: Optional[str] = os.getenv("DATABASE_URL")
+_DATABASE_URL: Optional[str] = os.getenv("DATABASE_URL")
 
 
-if not DATABASE_URL:
+if not _DATABASE_URL:
     raise RuntimeError("DATABASE_URL is not set in the environment.")
 
 
@@ -25,7 +25,7 @@ async def connect_db():
     """
     global pool
     pool = await asyncpg.create_pool(
-        DATABASE_URL, min_size=1, max_size=10, statement_cache_size=0
+        _DATABASE_URL, min_size=1, max_size=10, statement_cache_size=0
     )
     print("Connected to the database 🚀")
 

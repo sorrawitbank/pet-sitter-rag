@@ -1,26 +1,26 @@
 import os
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from dotenv import load_dotenv
 from google import genai
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+
 load_dotenv()
 
 
-def _get_api_key() -> str:
-    """Get Gemini/Google API key from environment."""
-    key = os.getenv("GEMINI_API_KEY")
-    if not key:
-        raise RuntimeError("GEMINI_API_KEY must be set.")
-    return key
+_GEMINI_API_KEY: Optional[str] = os.getenv("GEMINI_API_KEY")
+
+
+if not _GEMINI_API_KEY:
+    raise RuntimeError("GEMINI_API_KEY is not set in the environment.")
 
 
 def _create_client() -> genai.Client:
     """
     Create a Gemini client using GEMINI_API_KEY.
     """
-    return genai.Client(api_key=_get_api_key())
+    return genai.Client(api_key=_GEMINI_API_KEY)
 
 
 def get_text_embedding(text: str) -> List[float]:
@@ -48,7 +48,7 @@ def create_structured_llm(
     """
     llm = ChatGoogleGenerativeAI(
         model=model,
-        api_key=_get_api_key(),
+        api_key=_GEMINI_API_KEY,
         temperature=temperature,
     )
     return llm.with_structured_output(schema=schema, method="json_schema")

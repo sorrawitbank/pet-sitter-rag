@@ -20,12 +20,12 @@ router = APIRouter()
 
 
 @router.get("/")
-async def root():
+def root():
     return "Welcome to Pet Sitter RAG"
 
 
 @router.get("/health")
-async def health():
+def health():
     return {"status": "OK", "timestamp": datetime.now()}
 
 
