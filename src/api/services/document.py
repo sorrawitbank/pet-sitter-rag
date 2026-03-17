@@ -8,7 +8,6 @@ from src.rag.query_metadata import extract_query_metadata, resolve_extraction
 from src.rag.retriever import get_sitter_retriever
 from src.rag.schemas import RAGResponseSchema, ResolvedMetadata, QueryMetadataExtraction
 
-BASE_SITTER_URL = "https://pet-sitter-app-two.vercel.app/petsitter"
 
 # System prompt (same rules as before, no free-form JSON instruction; structured output is enforced by schema)
 SYSTEM_PROMPT = (
@@ -36,7 +35,7 @@ async def answer_query_with_rag(
 ) -> Dict[str, Any]:
     """
     Retrieve context via LangChain SitterRankingRetriever, then generate a structured
-    response (introduction, sitters with tradeName/url/description, confidence) using
+    response (introduction, sitters with id/tradeName/description, confidence) using
     ChatGoogleGenerativeAI with_structured_output.
     """
     extraction: QueryMetadataExtraction = await extract_query_metadata(
@@ -103,7 +102,6 @@ async def answer_query_with_rag(
     for i, info in enumerate(sitter_info):
         trade_name = info.get("trade_name", "")
         sitter_id = info.get("sitter_id", "")
-        url = f"{BASE_SITTER_URL}/{sitter_id}" if sitter_id else ""
         description = ""
         if i < len(raw_sitters):
             s = raw_sitters[i]
@@ -113,8 +111,8 @@ async def answer_query_with_rag(
                 description = str(getattr(s, "description", ""))
         sitters_response.append(
             {
+                "sitterId": sitter_id,
                 "tradeName": trade_name,
-                "url": url,
                 "description": description,
             }
         )

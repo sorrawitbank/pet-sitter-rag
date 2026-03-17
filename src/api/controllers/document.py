@@ -9,7 +9,7 @@ async def handle_document_query(
 ) -> Dict[str, Any]:
     """
     Orchestrate answering a user query using RAG and return structured response:
-    introduction, sitters (tradeName, url, description), confidence.
+    introduction, sitters (sitterId, tradeName, description), confidence.
     """
     result = await answer_query_with_rag(query, top_k=top_k)
     return {
