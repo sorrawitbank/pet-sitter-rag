@@ -1,0 +1,929 @@
+district_id,province_id,name
+1001,10,Phra Nakhon
+1002,10,Dusit
+1003,10,Nong Chok
+1004,10,Bang Rak
+1005,10,Bang Khen
+1006,10,Bang Kapi
+1007,10,Pathum Wan
+1008,10,Pom Prap Sattruphai
+1009,10,Phra Khanong
+1010,10,Min Buri
+1011,10,Lat Krabang
+1012,10,Yannawa
+1013,10,Samphanthawong
+1014,10,Phaya Thai
+1015,10,Thon Buri
+1016,10,Bangkok Yai
+1017,10,Huai Khwang
+1018,10,Khlong San
+1019,10,Taling Chan
+1020,10,Bangkok Noi
+1021,10,Bang Khun Thian
+1022,10,Phasi Charoen
+1023,10,Nong Khaem
+1024,10,Rat Burana
+1025,10,Bang Phlat
+1026,10,Din Daeng
+1027,10,Bung Kum
+1028,10,Sa Thon
+1029,10,Bang Su
+1030,10,Chatuchak
+1031,10,Bang Kho Laem
+1032,10,Prawet
+1033,10,Khlong Toei
+1034,10,Suan Luang
+1035,10,Chom Thong
+1036,10,Don Mueang
+1037,10,Rat Thewi
+1038,10,Lat Phrao
+1039,10,Watthana
+1040,10,Bang Khae
+1041,10,Lak Si
+1042,10,Sai Mai
+1043,10,Khanna Yao
+1044,10,Saphan Sung
+1045,10,Wang Thong Lang
+1046,10,Khlong Sam Wa
+1047,10,Bang Na
+1048,10,Thawi Watthana
+1049,10,Thung Khu
+1050,10,Bang Bon
+1101,11,Mueang Samut Prakan
+1102,11,Bang Bo
+1103,11,Bang Phli
+1104,11,Phra Pradaeng
+1105,11,Phra Samut Chedi
+1106,11,Bang Sao Thong
+1201,12,Mueang Nonthaburi
+1202,12,Bang Kruai
+1203,12,Bang Yai
+1204,12,Bang Bua Thong
+1205,12,Sai Noi
+1206,12,Pak Kret
+1301,13,Mueang Pathum Thani
+1302,13,khlong Luang
+1303,13,Thanyaburi
+1304,13,Nong Suea
+1305,13,Lat Lum Kaeo
+1306,13,Lam Luk Ka
+1307,13,Sam Khok
+1401,14,Phra Nakhon Si Ayutthaya
+1402,14,Tha Ruea
+1403,14,Nakhon Luang
+1404,14,Bang Sai
+1405,14,Bang Ban
+1406,14,Bang Pa-in
+1407,14,Bang Pahan
+1408,14,Phak Hai
+1409,14,Phachi
+1410,14,Lat Bua Luang
+1411,14,Wang Noi
+1412,14,Sena
+1413,14,Bang Sai
+1414,14,Uthai
+1415,14,Maha Rat
+1416,14,Ban Phraek
+1501,15,Mueang Ang Thong
+1502,15,Chaiyo
+1503,15,Pa Mok
+1504,15,Pho Thong
+1505,15,Sawaeng Ha
+1506,15,Wiset Chai Chan
+1507,15,Samko
+1601,16,Mueang Lop Buri
+1602,16,Phatthana Nikhom
+1603,16,Khok Samrong
+1604,16,Chai Badan
+1605,16,Tha Wung
+1606,16,Ban Mi
+1607,16,Tha Luang
+1608,16,Sa Bot
+1609,16,Khok Charoen
+1610,16,Lam Sonthi
+1611,16,Nong Muang
+1701,17,Mueang Sing Buri
+1702,17,Bang Rachan
+1703,17,Khai Bang Rachan
+1704,17,Phrom Buri
+1705,17,Tha Chang
+1706,17,In Buri
+1801,18,Mueang Chai Nat
+1802,18,Manorom
+1803,18,Wat Sing
+1804,18,Sapphaya
+1805,18,Sankhaburi
+1806,18,Hankha
+1807,18,Nong Mamong
+1808,18,Noen Kham
+1901,19,Mueang Saraburi
+1902,19,Kaeng Khoi
+1903,19,Nong Khae
+1904,19,Wihan Daeng
+1905,19,Nong Saeng
+1906,19,Ban Mo
+1907,19,Don Phut
+1908,19,Nong Don
+1909,19,Phra Phutthabat
+1910,19,Sao Hai
+1911,19,Muak Lek
+1912,19,Wang Muang
+1913,19,Chaloem Phra Kiet
+2001,20,Mueang Chon Buri
+2002,20,Ban Bueng
+2003,20,Nong Yai
+2004,20,Bang Lamung
+2005,20,Phan Thong
+2006,20,Phanat Nikhom
+2007,20,Si Racha
+2008,20,Ko Sichang
+2009,20,Sattahip
+2010,20,Bo Thong
+2011,20,Ko Chan
+2101,21,Mueang Rayong
+2102,21,Ban Chang
+2103,21,Klaeng
+2104,21,Wang Chan
+2105,21,Ban Khai
+2106,21,Pluak Daeng
+2107,21,Khao Chamao
+2108,21,Nikhom Phatthana
+2201,22,Mueang Chanthaburi
+2202,22,Khlung
+2203,22,Tha Mai
+2204,22,Pong Nam Ron
+2205,22,Makham
+2206,22,Laem Sing
+2207,22,Soi Dao
+2208,22,Kaeng Hang Maeo
+2209,22,Na Yai Am
+2210,22,Khao Khitchakut
+2301,23,Mueang Trat
+2302,23,Khlong Yai
+2303,23,Khao Saming
+2304,23,Bo Rai
+2305,23,Laem Ngop
+2306,23,Ko Kut
+2307,23,Ko Chang
+2401,24,Mueang Chachoengsao
+2402,24,Bang Khla
+2403,24,Bang Nam Priao
+2404,24,Bang Pakong
+2405,24,Ban Pho
+2406,24,Phanom Sarakham
+2407,24,Ratchasan
+2408,24,Sanam Chai Khet
+2409,24,Pleang Yao
+2410,24,Tha Takiap
+2411,24,Khlong Khuean
+2501,25,Mueang Prachin Buri
+2502,25,Kabin Buri
+2503,25,Na Di
+2506,25,Ban Sang
+2507,25,Prachantakham
+2508,25,Si Maha Phot
+2509,25,Si Mahosot
+2601,26,Mueang Nakhon Nayok
+2602,26,Pak Phli
+2603,26,Ban Na
+2604,26,Ongkharak
+2701,27,Mueang Sa Kaeo
+2702,27,Khlong Hat
+2703,27,Ta Phraya
+2704,27,Wang Nam Yen
+2705,27,Watthana Nakhon
+2706,27,Aranyaprathet
+2707,27,Khao Chakan
+2708,27,Khok Sung
+2709,27,Wang Sombun
+3001,30,Mueang Nakhon Ratchasima
+3002,30,Khon Buri
+3003,30,Soeng Sang
+3004,30,Khong
+3005,30,Ban Lueam
+3006,30,Chakkarat
+3007,30,Chok Chai
+3008,30,Dan Khun Thot
+3009,30,Non Thai
+3010,30,Non Sung
+3011,30,Kham Sakaesaeng
+3012,30,Bua Yai
+3013,30,Prathai
+3014,30,Pak Thong Chai
+3015,30,Phimai
+3016,30,Huai Thalaeng
+3017,30,Chum Phuang
+3018,30,Sung Noen
+3019,30,Kham Thale So
+3020,30,Si Khio
+3021,30,Pak Chong
+3022,30,Nong Bunmak
+3023,30,Kaeng Sanam Nang
+3024,30,Non Daeng
+3025,30,Wang Nam Khiao
+3026,30,Thepharak
+3027,30,Mueang Yang
+3028,30,Phra Thong Kham
+3029,30,Lamtaman Chai
+3030,30,Bua Lai
+3031,30,Sida
+3032,30,Chaloem Phra Kiet
+3101,31,Mueang Buri Ram
+3102,31,Khu Mueang
+3103,31,Krasang
+3104,31,Nang Rong
+3105,31,Nong Ki
+3106,31,Lahan Sai
+3107,31,Prakhon Chai
+3108,31,Ban Kruat
+3109,31,Phutthaisong
+3110,31,Lam Plai Mat
+3111,31,Satuek
+3112,31,Pakham
+3113,31,Na Pho
+3114,31,Nong Hong
+3115,31,Phlapphla Chai
+3116,31,Huai Rat
+3117,31,Non Din Daeng
+3118,31,Chamni
+3119,31,Ban Mai Chaiyaphot
+3120,31,Non Din Daeng
+3121,31,Ban Dan
+3122,31,Khaen Dong
+3123,31,Chaloem Phra Kiet
+3201,32,Mueang Surin
+3202,32,Chumphon Buri
+3203,32,Tha Tum
+3204,32,Chom Phra
+3205,32,Prasat
+3206,32,Kap Choeng
+3207,32,Rattanaburi
+3208,32,Sanom
+3209,32,Sikhoraphum
+3210,32,Sangkha
+3211,32,Lamduan
+3212,32,Samrong Thap
+3213,32,Buachet
+3214,32,Phanom Dong Rak
+3215,32,Si Narong
+3216,32,Khwao Sinarin
+3217,32,Non Narai
+3301,33,Mueang Si Sa Ket
+3302,33,Yang Chum Noi
+3303,33,Kanthararom
+3304,33,Kantharalak
+3305,33,Khukhan
+3306,33,Phrai Bueng
+3307,33,Prang Ku
+3308,33,Khun Han
+3309,33,Rasi Salai
+3310,33,Uthumphon Phisai
+3311,33,Bueng Bun
+3312,33,Huai Thap Than
+3313,33,Non Khun
+3314,33,Si Rattana
+3315,33,Nam Kliang
+3316,33,Wang Hin
+3317,33,Phu Sing
+3318,33,Mueang Chan
+3319,33,Benchalak
+3320,33,Phayu
+3321,33,Pho Si Suwan
+3322,33,Sila Lat
+3401,34,Mueang Ubon Ratchathani
+3402,34,Si Mueang Mai
+3403,34,Khong Chiam
+3404,34,Khueang Nai
+3405,34,Khemarat
+3407,34,Det Udom
+3408,34,Na Chaluai
+3409,34,Nam Yuen
+3410,34,Boontharik
+3411,34,Trakan Phuet Phon
+3412,34,Kut Khaopun
+3414,34,Muang Sam Sip
+3415,34,Warin Chamrap
+3419,34,Phibun Mangsahan
+3420,34,Tan Sum
+3421,34,Pho Sai
+3422,34,Samrong
+3424,34,Don Mot Daeng
+3425,34,Sirindhorn
+3426,34,Thung Si Udom
+3429,34,Na Yia
+3430,34,Na Tan
+3431,34,Lao Suea Kok
+3432,34,Sawang Wirawong
+3433,34,Nam Khun
+3501,35,Mueang Yasothon
+3502,35,Sai Mun
+3503,35,Kut Chum
+3504,35,Kham Khuean Kaeo
+3505,35,Pa Tio
+3506,35,Maha Chana Chai
+3507,35,Kho Wang
+3508,35,Loeng Nok Tha
+3509,35,Thai Charoen
+3601,36,Mueang Chaiyaphum
+3602,36,Ban Khwao
+3603,36,Khon Sawan
+3604,36,Kaset Sombun
+3605,36,Nong Bua Daeng
+3606,36,Chatturat
+3607,36,Bamnet Narong
+3608,36,Nong Bua Rawe
+3609,36,Thep Sathit
+3610,36,Phu Khiao
+3611,36,Ban Thaen
+3612,36,Kaeng Khro
+3613,36,Khon San
+3614,36,Phakdi Chumphon
+3615,36,Noen Sa-nga
+3616,36,Sap Yai
+3701,37,Mueang Amnat Charoen
+3702,37,Chanuman
+3703,37,Pathum Ratchawongsa
+3704,37,Phana
+3705,37,Senangkhanikhom
+3706,37,Hua Taphan
+3707,37,Lue Amnat
+3801,38,Bueng Kan
+3802,38,Phon Charoen
+3803,38,So Phisai
+3804,38,Seka
+3805,38,Pak Khat
+3806,38,Bueng Khong Long
+3807,38,Si Wilai
+3808,38,Bung Khla
+3901,39,Mueang Nong Bua Lam Phu
+3902,39,Na Klang
+3903,39,Non Sang
+3904,39,Si Bun Rueang
+3905,39,Suwannakhuha
+3906,39,Na Wang
+4001,40,Mueang Khon Kaen
+4002,40,Ban Fang
+4003,40,Phra Yuen
+4004,40,Nong Ruea
+4005,40,Chum Phae
+4006,40,Si Chomphu
+4007,40,Nam Phong
+4008,40,Ubolratana
+4009,40,Kranuan
+4010,40,Ban Phai
+4011,40,Pueai Noi
+4012,40,Phon
+4013,40,Waeng Yai
+4014,40,Waeng Noi
+4015,40,Nong Song Hong
+4016,40,Phu Wiang
+4017,40,Mancha Khiri
+4018,40,Chonnabot
+4019,40,Khao Suan Kwang
+4020,40,Phu Phaman
+4021,40,Sam Sung
+4022,40,Khok Pho Chai
+4023,40,Nong Na Kham
+4024,40,Ban Haet
+4025,40,Non Sila
+4026,40,Wiang Kao
+4101,41,Mueang Udon Thani
+4102,41,Kut Chap
+4103,41,Nong Wua So
+4104,41,Kumphawapi
+4105,41,Non Sa-at
+4106,41,Nong Saeng
+4107,41,Thung Fon
+4108,41,Chai Wan
+4109,41,Si That
+4110,41,Wang Sam Mo
+4111,41,Ban Dung
+4117,41,Ban Phue
+4118,41,Nam Som
+4119,41,Phen
+4120,41,Sang Khom
+4121,41,Nong Saeng
+4122,41,Na Yung
+4123,41,Phibun Rak
+4124,41,Ku Kaeo
+4125,41,Prachaksinlapakhom
+4201,42,Mueang Loei
+4202,42,Na Duang
+4203,42,Chiang Khan
+4204,42,Pak Chom
+4205,42,Dan Sai
+4206,42,Na Haeo
+4207,42,Phu Ruea
+4208,42,Tha Li
+4209,42,Wang Saphung
+4210,42,Phu Kradueng
+4211,42,Phu Luang
+4212,42,Pha  Khao
+4213,42,Erawan
+4214,42,Nong Hin
+4301,43,Mueang Nong Khai
+4302,43,Tha Bo
+4305,43,Phon Phisai
+4307,43,Si Chiang Mai
+4308,43,Sangkhom
+4314,43,Sakhrai
+4315,43,Fao Rai
+4316,43,Rattanawapi
+4317,43,Pho Tak
+4401,44,Mueang Maha Sarakham
+4402,44,Kae Dam
+4403,44,Kosum Phisai
+4404,44,Kantharawichai
+4405,44,Chiang Yuen
+4406,44,Borabue
+4407,44,Na Chueak
+4408,44,Phayakkhaphum Phisai
+4409,44,Wapi Pathum
+4410,44,Na Dun
+4411,44,Yang Sisurat
+4412,44,Kut Rang
+4413,44,Chuen Chom
+4501,45,Mueang Roi Et
+4502,45,Kaset Wisai
+4503,45,Pathum Rat
+4504,45,Chaturaphak Phiman
+4505,45,Thawat Buri
+4506,45,Phanom Phrai
+4507,45,Phon Thong
+4508,45,Pho Chai
+4509,45,Nong Phok
+4510,45,Selaphum
+4511,45,Suwannaphum
+4512,45,Mueang Suang
+4513,45,Phon Sai
+4514,45,At Samat
+4515,45,Moei Wadi
+4516,45,Si Somdet
+4517,45,Changhan
+4518,45,Chiang Khwan
+4519,45,Nong Hi
+4520,45,Thung Khao Luang
+4601,46,Mueang Kalasin
+4602,46,Na Mon
+4603,46,Kamalasai
+4604,46,Rong Kham
+4605,46,Kuchinarai
+4606,46,Khao Wong
+4607,46,Yang Talat
+4608,46,Huai Mek
+4609,46,Sahatsakhan
+4610,46,Kham Muang
+4611,46,Tha Khantho
+4612,46,Nong Kung Si
+4613,46,Somdet
+4614,46,Huai Phueng
+4615,46,Sam Chai
+4616,46,Na Khu
+4617,46,Don Chan
+4618,46,Khong Chai
+4701,47,Mueang Sakon Nakhon
+4702,47,Kusuman
+4703,47,Kut Bak
+4704,47,Phanna Nikhom
+4705,47,Phanh khon
+4706,47,Waritchaphum
+4707,47,Nikhom Nam un
+4708,47,Wanon Niwat
+4709,47,Kham Ta Kla
+4710,47,Ban Muang
+4711,47,Akat Amnuai
+4712,47,Sawang Daen Din
+4713,47,Song Dao
+4714,47,Tao Ngoi
+4715,47,Khok Si Suphan
+4716,47,Charoen Sin
+4717,47,Phon Na Kaeo
+4718,47,Phu Phan
+4801,48,Mueang Nakhon Phanom
+4802,48,Pla Pak
+4803,48,Tha Uthen
+4804,48,Ban Phaeng
+4805,48,That Phanom
+4806,48,Renu Nakhon
+4807,48,Na Kae
+4808,48,Si Songkhram
+4809,48,Na Wa
+4810,48,Phon Sawan
+4811,48,Na Thom
+4812,48,Wang Yang
+4901,49,Mueang Mukdahan
+4902,49,Nikhom Kham Soi
+4903,49,Don Tan
+4904,49,Don Tan
+4905,49,Khamcha-i
+4906,49,Wan Yai
+4907,49,Nong Sung
+5001,50,Mueang Chiang Mai
+5002,50,Chom Thong
+5003,50,Mae Chaem
+5004,50,Chiang Dao
+5005,50,Doi Saket
+5006,50,Mae Taeng
+5007,50,Mae Rim
+5008,50,Samoeng
+5009,50,Fang
+5010,50,Mae Ai
+5011,50,Phrao
+5012,50,San Pa Tong
+5013,50,San Kamphaeng
+5014,50,San Sai
+5015,50,Hang Dong
+5016,50,Hot
+5017,50,Doi Tao
+5018,50,Omkoi
+5019,50,Saraphi
+5020,50,Wiang Haeng
+5021,50,Chai Prakan
+5022,50,Mae Wang
+5023,50,Mae On
+5024,50,Doi Lo
+5025,50,Kanlayaniwatthana
+5101,51,Mueang Lamphun
+5102,51,Mae Tha
+5103,51,Ban Hong
+5104,51,Li
+5105,51,Thung Hua Chang
+5106,51,Pa Sang
+5107,51,Ban Thi
+5108,51,Wiang Nong Long
+5201,52,Mueang Lampang
+5202,52,Mae Mo
+5203,52,Ko kha
+5204,52,Soem Ngam
+5205,52,Ngao
+5206,52,Chae Hom
+5207,52,Wang Nuea
+5208,52,Thoen
+5209,52,Mae Phrik
+5210,52,Mae Tha
+5211,52,Sop Prap
+5212,52,Hang Chat
+5213,52,Mueang Pan
+5301,53,Mueang Uttaradit
+5302,53,Tron
+5303,53,Tha Pla
+5304,53,Nam Pat
+5305,53,Fak Tha
+5306,53,Ban Khok
+5307,53,Phichai
+5308,53,Laplae
+5309,53,Thong Saen Khan
+5401,54,Mueang Phrae
+5402,54,Mueang Phrae
+5403,54,Long
+5404,54,Sung Men
+5405,54,Den Chai
+5406,54,Song
+5407,54,Wang Chin
+5408,54,Nong Muang Khai
+5501,55,Mueang Nan
+5502,55,Mae Charim
+5503,55,Ban Luang
+5504,55,Na Noi
+5505,55,Pua
+5506,55,Tha Wang Pha
+5507,55,Wiang Sa
+5508,55,Thung Chang
+5509,55,Chiang Klang
+5510,55,Na Muen
+5511,55,Santi Suk
+5512,55,Bo Kluea
+5513,55,Song Khwae
+5514,55,Phu Phiang
+5515,55,Chaloem Phra Kiet
+5601,56,Mueang Phayao
+5602,56,Chun
+5603,56,Chiang Kham
+5604,56,Chiang Muan
+5605,56,Dok Khamtai
+5606,56,Pong
+5607,56,"Mae Chai "
+5608,56,Phu Sang
+5609,56,Phu Kamyao
+5701,57,Mueang Chiang Rai
+5702,57,Wiang Chai
+5703,57,Chiang Khong
+5704,57,Thoeng
+5705,57,Phan
+5706,57,Pa Daet
+5707,57,Mae Chan
+5708,57,Chiang Saen
+5709,57,Mae Sai
+5710,57,Mae Suai
+5711,57,Wiang Pa Pao
+5712,57,Phaya Mengrai
+5713,57,Wiang Kaen
+5714,57,Khun Tan
+5715,57,Mae Fa Luang
+5716,57,Mae Lao
+5717,57,Wiang Chiang Rung
+5718,57,Doi Luang
+5801,58,Mueang Mae Hong Son
+5802,58,Khun Yuam
+5803,58,Pai
+5804,58,Mae Sariang
+5805,58,Mae La Noi
+5806,58,Sop Moei
+5807,58,Pang Mapha
+6001,60,Mueang Nakhon Sawan
+6002,60,Krok Phra
+6003,60,Chum Saeng
+6004,60,Nong Bua
+6005,60,Banphot Phisai
+6006,60,Kao Liao
+6007,60,Takhli
+6008,60,Tha Tako
+6009,60,Phaisali
+6010,60,Phayuha Hkiri
+6011,60,Lat Yao
+6012,60,Tak Fa
+6013,60,Mae Wong
+6014,60,Mae Pern
+6015,60,Chum Ta Bong
+6101,61,Mueang Uthai Thani
+6102,61,Thap Than
+6103,61,Sawang Arom
+6104,61,Nong Chang
+6105,61,Nong Khayang
+6106,61,Ban Rai
+6107,61,Lan Sak
+6108,61,Huai Khot
+6201,62,Mueang Kamphaeng Phet
+6202,62,Sai Ngam
+6203,62,Khlong Lan
+6204,62,Khanu Woralaksaburi
+6205,62,Khlong Khlung
+6206,62,Phran Kratai
+6207,62,Lan Krabue
+6208,62,Sai Thong Watthana
+6209,62,Pang Sila Thong
+6210,62,Bueng Samakkhi
+6211,62,Kosamphi Nakhon
+6301,63,Mueang Tak
+6302,63,Ban Tak
+6303,63,Sam Ngao
+6304,63,Mae Ramat
+6305,63,Tha Song Yang
+6306,63,Mae Sot
+6307,63,Phop Phra
+6308,63,Um Phang
+6309,63,Wang Chao
+6401,64,Mueang Sukhothai
+6402,64,Ban Dan Lan Hoi
+6403,64,Khiri Mat
+6404,64,Kong Krailat
+6405,64,Si Satchanalai
+6406,64,Si Samrong
+6407,64,Sawankhalok
+6408,64,Si Nakhon
+6409,64,Thung Saliam
+6501,65,Mueang Phitsanulok
+6502,65,Nakhon Thai
+6503,65,Chat Trakan
+6504,65,Bang Rakam
+6505,65,Bang Krathum
+6506,65,Phrom Phiram
+6507,65,Wat Bot
+6508,65,Wang Thong
+6509,65,Noen Maprang
+6601,66,Mueang Phichit
+6602,66,Wang Sai Phun
+6603,66,Pho Prathap Chang
+6604,66,Taphan Hin
+6605,66,Bang Mun Nak
+6606,66,Pho Thale
+6607,66,Sam Ngam
+6608,66,Tap Khlo
+6609,66,Sak Lek
+6610,66,Bueng Na Rang
+6611,66,Dong Charoen
+6612,66,Wachirabarami
+6701,67,Mueang Phetchabun
+6702,67,Chon Daen
+6703,67,Lom Sak
+6704,67,Lom Kao
+6705,67,Wichian Buri
+6706,67,Si Thep
+6707,67,Nong Phai
+6708,67,Bueng Sam Phan
+6709,67,Nam Nao
+6710,67,Wang Pong
+6711,67,Khao kho
+7001,70,Mueang Ratchaburi
+7002,70,Chom Bueng
+7003,70,Suan Phueng
+7004,70,Damnoen Saduak
+7005,70,Ban Pong
+7006,70,Bang Phae
+7007,70,Photharam
+7008,70,Pak Tho
+7009,70,Wat Phleng
+7010,70,Ban Kha
+7101,71,Mueang Kanchanaburi
+7102,71,Sai Yok
+7103,71,Bo Phloi
+7104,71,Si Sawat
+7105,71,Tha Maka
+7106,71,Tha Muang
+7107,71,Thong Pha Phum
+7108,71,Sangkhla Buri
+7109,71,Phanom Thuan
+7110,71,Lao Khwan
+7111,71,Dan Makham Tia
+7112,71,Nong Prue
+7113,71,Huai Krachao
+7201,72,Mueang Saphan Buri
+7202,72,Doem Bang Nang Buat
+7203,72,Dan Chang
+7204,72,Bang Pla Ma
+7205,72,Si Prachan
+7206,72,Don Chedi
+7207,72,Song Phi Nong
+7208,72,Sam Chuk
+7209,72,U Thong
+7210,72,Nong Ya Sai
+7301,73,mueang Nakhon Pathom
+7302,73,Kamphaeng Saen
+7303,73,Nakhon Chai Si
+7304,73,Don Tum
+7305,73,Bang Len
+7306,73,Sam Phran
+7307,73,Phutthamonthon
+7401,74,Mueang Samut Sakhon
+7402,74,Krathum Baen
+7403,74,Ban Phaeo
+7501,75,Mueang Samut Songkhram
+7502,75,Bang Khonthi
+7503,75,Amphawa
+7601,76,Mueang Phetchaburi
+7602,76,Khao Yoi
+7603,76,Nong Ya Plong
+7604,76,Cha-am
+7605,76,Tha Yang
+7606,76,Ban Lat
+7607,76,Ban Laem
+7608,76,Kaeng Krachan
+7701,77,Mueang Prachuap Khiri Khan
+7702,77,Kui Buri
+7703,77,Thap Sakae
+7704,77,Bang Saphan
+7705,77,Bang Saphan Noi
+7706,77,Pran Buri
+7707,77,Hua Hin
+7708,77,Sam Roi Yot
+8001,80,Mueang Nakhon Si Thammarat
+8002,80,Phrom Khiri
+8003,80,Lan Saka
+8004,80,Chawang
+8005,80,Phipun
+8006,80,Chian Yai
+8007,80,Cha-uat
+8008,80,Tha Sala
+8009,80,Thung Song
+8010,80,Na Bon
+8011,80,Thung Yai
+8012,80,Pak Phanang
+8013,80,Ron Phibun
+8014,80,Sichon
+8015,80,Khanom
+8016,80,Hua Sai
+8017,80,Bang Khan
+8018,80,Tham Phannara
+8019,80,Chulabhorn
+8020,80,Phra Phrom
+8021,80,Nopphitam
+8022,80,Chang Klang
+8023,80,Chaloem Phra Kiet
+8101,81,Mueang Krabi
+8102,81,Khao Phanom
+8103,81,Ko Lanta
+8104,81,Khlong Thom
+8105,81,Ao Luek
+8106,81,Plai Phraya
+8107,81,Lam Thap
+8108,81,Nuea Khlong
+8201,82,Mueang Phang-nga
+8202,82,Ko Yao
+8203,82,Kapong
+8204,82,Takua Thung
+8205,82,Takua Pa
+8206,82,Khura Buri
+8207,82,Thap Put
+8208,82,Thai Mueang
+8301,83,Mueang Phuket
+8302,83,Kathu
+8303,83,Thalang
+8401,84,Mueang Surat Thani
+8402,84,Kanchanadit
+8403,84,Don Sak
+8404,84,Ko Samui
+8405,84,Ko Pha-ngan
+8406,84,Chaiya
+8407,84,Tha Chana
+8408,84,Khiri Rat Nikhom
+8409,84,Ban Ta Khun
+8410,84,Phanom
+8411,84,Tha Chang
+8412,84,Ban Na San
+8413,84,Ban Na Doem
+8414,84,Khian Sa
+8415,84,Wiang Sa
+8416,84,Phrasaeng
+8417,84,Phunphin
+8418,84,Chai Buri
+8419,84,Chai Buri
+8501,85,Mueang Ranong
+8502,85,La-un
+8503,85,Papoe
+8504,85,Kra Buri
+8505,85,Suk Samran
+8601,86,Mueang Chumphon
+8602,86,Tha Sae
+8603,86,Pathio
+8604,86,Lang Suan
+8605,86,Lamae
+8606,86,Phato
+8607,86,Sawi
+8608,86,Thung Tako
+9001,90,Muaeng Songkhla
+9002,90,Sathing Phra
+9003,90,Chana
+9004,90,Na Thawi
+9005,90,Thepha
+9006,90,Saba Yoi
+9007,90,Ranot
+9008,90,Krasae Sin
+9009,90,Rattaphum
+9010,90,Sadao
+9011,90,Hat Yai
+9012,90,Na Mom
+9013,90,Khuan Niang
+9014,90,Bang Klam
+9015,90,Singhanakhon
+9016,90,Khlong Hoi Khong
+9101,91,Mueang Satun
+9102,91,Khuan Don
+9103,91,Khuan Kalong
+9104,91,Tha Phae
+9105,91,La-ngu
+9106,91,Thung  Wa
+9107,91,Manang
+9201,92,Mueang Trang
+9202,92,Kantang
+9203,92,Yan Ta Khao
+9204,92,Palian
+9205,92,Sikao
+9206,92,Huai Yot
+9207,92,Wang Wiset
+9208,92,Na Yong
+9209,92,Ratsada
+9210,92,Hat Samran
+9301,93,Mueang Phatthalung
+9302,93,Kong Ra
+9303,93,Khao Chaison
+9304,93,Tamot
+9305,93,Khuan Khanun
+9306,93,Pak Phayun
+9307,93,Si Banphot
+9308,93,Pa Bon
+9309,93,Bang Kaeo
+9310,93,Pa Phayom
+9311,93,Srinagarindra
+9401,94,Mueang Pattani
+9402,94,Khok Pho
+9403,94,Nong Chik
+9404,94,Panare
+9405,94,Mayo
+9406,94,Thung Yang Daeng
+9407,94,Sai Buri
+9408,94,Mai Kaen
+9409,94,Yaring
+9410,94,Yarang
+9411,94,Kapho
+9412,94,Mae Lan
+9501,95,Mueang Yala
+9502,95,Betong
+9503,95,Bannang Sata
+9504,95,Than To
+9505,95,Yaha
+9506,95,Raman
+9507,95,Kabang
+9508,95,Krong Pinang
+9601,96,Mueang Narathiwat
+9602,96,Tak Bai
+9603,96,Tak Bai
+9604,96,Yi-ngo
+9605,96,Ra-ngae
+9606,96,Rueso
+9607,96,Si Sakhon
+9608,96,Waeng
+9609,96,Sukhirin
+9610,96,Su-ngai Kolok
+9611,96,Su-ngai Padi
+9612,96,Chanae
+9613,96,Cho-airong
