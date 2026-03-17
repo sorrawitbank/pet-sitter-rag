@@ -49,22 +49,22 @@ def mock_document(body: DocumentQueryRequest) -> DocumentQueryResponse:
     """
     return DocumentQueryResponse(
         query=body.query,
-        introduction="นี่คือพี่เลี้ยงสัตว์เลี้ยงบางส่วนที่สามารถดูแลทั้งสุนัขและแมวได้ตามข้อมูลที่มีค่ะ",
+        introduction="Here are some pet sitters who can take care of both dogs and cats based on the available information.",
         sitters=[
             {
                 "tradeName": "City Pet Companion",
                 "url": "https://pet-sitter-app-two.vercel.app/petsitter/6",
-                "description": "มีบริการดูแลทั้งสุนัขและแมว โดยมีตารางการให้อาหาร การเล่น และการเดินสำหรับสุนัข ส่วนแมวจะได้รับของเล่นเสริมสร้างพัฒนาการและพื้นที่ผ่อนคลาย",
+                "description": "Provides care for both dogs and cats, with scheduled feeding, playtime, and walks for dogs, while cats receive developmental toys and a dedicated relaxing space.",
             },
             {
                 "tradeName": "Green Garden Pet Care",
                 "url": "https://pet-sitter-app-two.vercel.app/petsitter/3",
-                "description": "คุณพลอยรักการใช้เวลากับสัตว์เลี้ยงและมุ่งมั่นที่จะมอบสภาพแวดล้อมที่อบอุ่นและเอาใจใส่",
+                "description": "Ploy loves spending time with pets and is dedicated to providing a warm and attentive environment.",
             },
             {
                 "tradeName": "Happy House!",
                 "url": "https://pet-sitter-app-two.vercel.app/petsitter/1",
-                "description": "คุณ Jane Maison เป็นพี่เลี้ยงสัตว์เลี้ยงที่เชื่อถือได้ในเสนานิคม กรุงเทพฯ และมีบ้านที่กว้างขวางเพื่อมอบสภาพแวดล้อมที่ปลอดภัยและเป็นที่รักสำหรับแมว สุนัข และกระต่าย",
+                "description": "Jane Maison is a trusted pet sitter in Sena Nikhom, Bangkok, with a spacious home that offers a safe and loving environment for cats, dogs, and rabbits.",
             },
         ],
         confidence="Medium",
