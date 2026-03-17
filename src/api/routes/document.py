@@ -1,6 +1,6 @@
 from typing import Literal
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from src.api.controllers.document import handle_document_query
@@ -12,8 +12,8 @@ class DocumentQueryRequest(BaseModel):
 
 
 class SitterItem(BaseModel):
+    sitterId: str
     tradeName: str
-    url: str
     description: str
 
 
@@ -31,9 +31,13 @@ router = APIRouter(prefix="/document", tags=["document"])
 async def query_document(body: DocumentQueryRequest) -> DocumentQueryResponse:
     """
     Receive a query and return a structured RAG response: introduction,
-    top 3 sitters (tradeName, url, description), and confidence.
+    top 3 sitters (sitterId, tradeName, description), and confidence.
     """
-    result = await handle_document_query(query=body.query, top_k=body.top_k)
+    try:
+        result = await handle_document_query(query=body.query, top_k=body.top_k)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail="Internal server error") from exc
+
     return DocumentQueryResponse(
         query=result["query"],
         introduction=result["introduction"],
@@ -52,18 +56,18 @@ def mock_document(body: DocumentQueryRequest) -> DocumentQueryResponse:
         introduction="Here are some pet sitters who can take care of both dogs and cats based on the available information.",
         sitters=[
             {
+                "sitterId": "6",
                 "tradeName": "City Pet Companion",
-                "url": "https://pet-sitter-app-two.vercel.app/petsitter/6",
                 "description": "Provides care for both dogs and cats, with scheduled feeding, playtime, and walks for dogs, while cats receive developmental toys and a dedicated relaxing space.",
             },
             {
+                "sitterId": "3",
                 "tradeName": "Green Garden Pet Care",
-                "url": "https://pet-sitter-app-two.vercel.app/petsitter/3",
                 "description": "Ploy loves spending time with pets and is dedicated to providing a warm and attentive environment.",
             },
             {
+                "sitterId": "1",
                 "tradeName": "Happy House!",
-                "url": "https://pet-sitter-app-two.vercel.app/petsitter/1",
                 "description": "Jane Maison is a trusted pet sitter in Sena Nikhom, Bangkok, with a spacious home that offers a safe and loving environment for cats, dogs, and rabbits.",
             },
         ],
