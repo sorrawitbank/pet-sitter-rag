@@ -25,6 +25,7 @@ SYSTEM_PROMPT = (
     "- Always respond in the same language as the user's question.\n"
     "- For each sitter in CONTEXT, you MUST return exactly one sitter object in the sitters array, in the same order as the CONTEXT blocks (first block = first sitter).\n"
     "- For each sitter object, provide a short description (description) and use the TRADE_NAME from CONTEXT for trade_name.\n"
+    "- If a CONTEXT block includes location metadata such as PROVINCE or DISTRICT, treat that as explicit location evidence.\n"
     "- Never skip any sitter if there is a CONTEXT block for that sitter.\n"
     "- Set confidence to High, Medium, or Low based on how clearly the CONTEXT supports your answer.\n"
 )
@@ -39,6 +40,28 @@ async def answer_query_with_rag(
     response (introduction, sitters with id/tradeName/description, confidence) using
     ChatGoogleGenerativeAI with_structured_output.
     """
+
+    def _build_metadata_lines(metadata: Dict[str, Any]) -> str:
+        """
+        Build optional metadata lines for context. Keys may not exist.
+        """
+        lines: List[str] = []
+        province_name = metadata.get("provinceName")
+        if isinstance(province_name, str) and province_name.strip():
+            lines.append(f"PROVINCE: {province_name.strip()}")
+
+        district_name = metadata.get("districtName")
+        if isinstance(district_name, str) and district_name.strip():
+            lines.append(f"DISTRICT: {district_name.strip()}")
+
+        pet_type_names = metadata.get("petTypeNames")
+        if isinstance(pet_type_names, list):
+            cleaned = [str(v).strip() for v in pet_type_names if str(v).strip()]
+            if cleaned:
+                lines.append(f"PET_TYPES: {', '.join(cleaned)}")
+
+        return "\n".join(lines)
+
     extraction: QueryMetadataExtraction = await extract_query_metadata(
         query,
         include_canonical_in_prompt=True,
@@ -59,7 +82,14 @@ async def answer_query_with_rag(
         context_text = "(No relevant documents found.)"
         sitter_info = []
     else:
-        context_text = "\n\n---\n\n".join(d.page_content for d in lc_docs)
+        context_blocks: List[str] = []
+        for d in lc_docs:
+            metadata_lines = _build_metadata_lines(d.metadata)
+            if metadata_lines:
+                context_blocks.append(f"{d.page_content}\n{metadata_lines}")
+            else:
+                context_blocks.append(d.page_content)
+        context_text = "\n\n---\n\n".join(context_blocks)
         sitter_info = [
             {
                 "sitter_id": d.metadata.get("sitter_id", ""),

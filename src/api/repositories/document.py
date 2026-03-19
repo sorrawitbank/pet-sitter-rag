@@ -35,8 +35,7 @@ async def get_similar_rag_documents(
         if filters.pet_type_ids:
             # metadata.petTypeIds
             where_clauses.append(
-                f"EXISTS (SELECT 1 FROM jsonb_array_elements_text(metadata->'petTypeIds') AS x(val) "
-                f"WHERE (x.val)::int = ANY(${param_index}::int[]))"
+                f"(metadata->'petTypeIds')::jsonb @> to_jsonb(${param_index}::int[])"
             )
             params.append(filters.pet_type_ids)
             param_index += 1
