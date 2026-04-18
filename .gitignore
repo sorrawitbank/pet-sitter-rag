@@ -10,7 +10,8 @@ env/
 
 # Environment & secrets
 .env
-.env.*
+.env.local
+.env.*.local
 
 # IDE / editor
 .vscode/
