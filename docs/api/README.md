@@ -17,7 +17,7 @@ FastAPI service that answers natural-language questions about pet sitters using 
 
 - [Authentication](#authentication)
 - [General](#general)
-- [Document - `/api/document`](#document---apidocument)
+- [Documents - `/api/documents`](#documents---apidocuments)
 
 ---
 
@@ -69,7 +69,7 @@ The `timestamp` value is an ISO 8601 datetime string produced from the server cl
 
 ### Error Response (Generic Shape)
 
-**FastAPI `HTTPException` (for example `500` on `/api/document/query`)**
+**FastAPI `HTTPException` (for example `500` on `/api/documents/query`)**
 
 ```json
 {
@@ -103,11 +103,11 @@ Individual endpoints may add more specific rules and messages.
 
 ---
 
-## Document - `/api/document`
+## Documents - `/api/documents`
 
 Structured RAG endpoints: one runs the full pipeline (embed → retrieve → rank → Gemini structured output), the other returns a fixed mock for development or demos.
 
-### POST /api/document/query
+### POST /api/documents/query
 
 Run the full RAG pipeline for a user question.
 
@@ -146,16 +146,16 @@ Run the full RAG pipeline for a user question.
 
 ---
 
-### POST /api/document/mock
+### POST /api/documents/mock
 
-Return a **fixed** mock response with the same shape as `POST /api/document/query`, without calling the database or Gemini.
+Return a **fixed** mock response with the same shape as `POST /api/documents/query`, without calling the database or Gemini.
 
 **Body (JSON)**
 
-| Field | Type    | Required | Constraints                                                         |
-| ----- | ------- | -------- | ------------------------------------------------------------------- |
-| query | string  | yes      | Echoed back in the response as `query`                              |
-| top_k | integer | no       | Accepted for parity with `/api/document/query`; ignored by the mock |
+| Field | Type    | Required | Constraints                                                          |
+| ----- | ------- | -------- | -------------------------------------------------------------------- |
+| query | string  | yes      | Echoed back in the response as `query`                               |
+| top_k | integer | no       | Accepted for parity with `/api/documents/query`; ignored by the mock |
 
 **Success (200)**
 

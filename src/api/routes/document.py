@@ -24,7 +24,7 @@ class DocumentQueryResponse(BaseModel):
     confidence: Literal["High", "Medium", "Low"]
 
 
-router = APIRouter(prefix="/api/document", tags=["document"])
+router = APIRouter(prefix="/api/documents", tags=["documents"])
 
 
 @router.post("/query", response_model=DocumentQueryResponse)
