@@ -24,7 +24,7 @@ class DocumentQueryResponse(BaseModel):
     confidence: Literal["High", "Medium", "Low"]
 
 
-router = APIRouter(prefix="/document", tags=["document"])
+router = APIRouter(prefix="/api/documents", tags=["documents"])
 
 
 @router.post("/query", response_model=DocumentQueryResponse)
@@ -53,23 +53,39 @@ def mock_document(body: DocumentQueryRequest) -> DocumentQueryResponse:
     """
     return DocumentQueryResponse(
         query=body.query,
-        introduction="Here are some pet sitters who can take care of both dogs and cats based on the available information.",
+        introduction=(
+            "I found a few pet sitters in Bangkok who can care for your dog. "
+            "Here are their details:"
+        ),
         sitters=[
+            {
+                "sitterId": "1",
+                "tradeName": "MooMu House!",
+                "description": (
+                    "MooMu House! is run by Bank Sorrawit in Thung Khru, Bangkok. "
+                    "Bank provides a safe and loving environment in a spacious house for "
+                    "cats, dogs, and rabbits, with designated areas for play, relaxation, and sleep."
+                ),
+            },
             {
                 "sitterId": "6",
                 "tradeName": "City Pet Companion",
-                "description": "Provides care for both dogs and cats, with scheduled feeding, playtime, and walks for dogs, while cats receive developmental toys and a dedicated relaxing space.",
+                "description": (
+                    "City Pet Companion is located in a pet-friendly area in Bang Kapi, Bangkok. "
+                    "They offer enough indoor space for animals to move around safely, prioritizing "
+                    "cleanliness and safety for dogs and cats."
+                ),
             },
             {
-                "sitterId": "3",
-                "tradeName": "Green Garden Pet Care",
-                "description": "Ploy loves spending time with pets and is dedicated to providing a warm and attentive environment.",
-            },
-            {
-                "sitterId": "1",
-                "tradeName": "Happy House!",
-                "description": "Jane Maison is a trusted pet sitter in Sena Nikhom, Bangkok, with a spacious home that offers a safe and loving environment for cats, dogs, and rabbits.",
+                "sitterId": "7",
+                "tradeName": "PetSimplified",
+                "description": (
+                    "PetSimplified is located in a quiet residential area in Phra Nakhon, Bangkok. "
+                    "Their space is designed for pet comfort and safety, featuring a secure fenced yard "
+                    "for outdoor play and a cozy indoor area with air conditioning for dogs, cats, "
+                    "birds, and rabbits."
+                ),
             },
         ],
-        confidence="Medium",
+        confidence="High",
     )
