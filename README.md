@@ -2,14 +2,13 @@
 
 RAG service for the Pet Sitter platform. This FastAPI application retrieves relevant sitter context from PostgreSQL and generates structured recommendations with Gemini.
 
-<p align="center">
-    <a href="https://github.com/visneeb/pet-sitter-app" alt="Pet Sitter App">
-        <img src="https://img.shields.io/badge/github-pet--sitter--app-ff7037?logo=github&logoColor=white&style=flat-square" /></a>
-    <a href="https://github.com/sorrawitbank/pet-sitter-server" alt="Pet Sitter Server">
-        <img src="https://img.shields.io/badge/github-pet--sitter--server-1ccd83?logo=github&logoColor=white&style=flat-square" /></a>
-    <a href="https://github.com/sorrawitbank/pet-sitter-rag" alt="Pet Sitter RAG">
-        <img src="https://img.shields.io/badge/github-pet--sitter--rag-76c0fc?logo=github&logoColor=white&style=flat-square" /></a>
-</p>
+<div align="center">
+
+[![Pet Sitter App](https://img.shields.io/badge/github-pet--sitter--app-ff7037?logo=github&logoColor=white&style=flat-square)](https://github.com/visneeb/pet-sitter-app)
+[![Pet Sitter Server](https://img.shields.io/badge/github-pet--sitter--server-1ccd83?logo=github&logoColor=white&style=flat-square)](https://github.com/sorrawitbank/pet-sitter-server)
+[![Pet Sitter RAG](https://img.shields.io/badge/github-pet--sitter--rag-76c0fc?logo=github&logoColor=white&style=flat-square)](https://github.com/sorrawitbank/pet-sitter-rag)
+
+</div>
 
 ## Role In Ecosystem
 
@@ -64,7 +63,7 @@ Required groups include:
 
 ### 3) Run the service
 
-```c
+```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
